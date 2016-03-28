@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -40,6 +40,14 @@
         <activity
             android:name=".AddContacts"
             android:label="@string/title_activity_add_contacts" >
+        </activity>
+        <activity
+            android:name=".Display"
+            android:label="@string/title_activity_display" >
+        </activity>
+        <activity
+            android:name=".ViewContacts"
+            android:label="@string/title_activity_view_contacts" >
         </activity>
     </application>
 

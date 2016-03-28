@@ -47,10 +47,18 @@ public class MainActivity extends ActionBarActivity {
         editor=myPrefs.edit();
         setContentView(R.layout.activity_main);
         Button btnAddContact=(Button)findViewById(R.id.button);
+        Button btnViewContact=(Button)findViewById(R.id.button4);
+        btnViewContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent strint=new Intent(MainActivity.this,ViewContacts.class);
+                startActivity(strint);
+            }
+        });
         btnAddContact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent strint=new Intent(MainActivity.this,AddContacts.class);
+                Intent strint=new Intent(MainActivity.this,Display.class);
                 startActivity(strint);
             }
         });
@@ -80,7 +88,7 @@ public class MainActivity extends ActionBarActivity {
 
                         place = gps.getLocationName(latitude, longitude);
 
-                        userMessage = "I am in Panic Situvation .Please help me.My Latitude :" + latitude + " & Logitude :" + longitude + " & Place Name :" + place;
+                        userMessage = "I am in Panic Situvation .Please help me.My Current Location:" + place.substring(0,70);
                     }
                     else
                     {
@@ -95,12 +103,15 @@ public class MainActivity extends ActionBarActivity {
                         do{
                             MobNo=s.getString(s.getColumnIndex(Adptr.KEY_CONTACTNO));
                             Name=s.getString(s.getColumnIndex(Adptr.KEY_UNAME));
-
+                            Toast.makeText(MainActivity.this,MobNo+Name,Toast.LENGTH_LONG).show();
+                            System.out.println("Mob No :"+MobNo+" ,Name :"+Name+",UserMessage :"+userMessage);
+//                            SmsManager sm=SmsManager.getDefault();
+//                            sm.sendTextMessage(MobNo, null, userMessage, null, null);
                         }
                         while (s.moveToNext());
 			 			    }
-                    SmsManager sm=SmsManager.getDefault();
-                    sm.sendTextMessage(MobNo, null, userMessage, null, null);
+
+                   //System.out.println("Mob No :"+MobNo+" ,Name :"+Name+",UserMessage :"+userMessage);
 
                 }
                 else {
@@ -116,20 +127,25 @@ public class MainActivity extends ActionBarActivity {
         // Define a listener that responds to location updates
         LocationListener locationListener = new LocationListener()
         {
-            public void onLocationChanged(Location location)
-            {
-                location.getLatitude();
-                 Toast.makeText(context, "Current speed:" + location.getSpeed(), Toast.LENGTH_SHORT).show();
-                myPrefs = context.getSharedPreferences("myPrefs", MODE_WORLD_READABLE);
-                String blockingMode=myPrefs.getString("mode", "yes");
-                Bundle bb = intent.getExtras();
-                String state = bb.getString(TelephonyManager.EXTRA_STATE);
-                if ((state != null)&& (state.equalsIgnoreCase(TelephonyManager.EXTRA_STATE_RINGING))) {
-                    incommingNumber = bb.getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
-                    if(blockingMode.equals("yes"))
-                    {
-                        blockCall(context, bb);
+            public void onLocationChanged(Location location) {
+                try {
+                    location.getLatitude();
+
+//                 Toast.makeText(context, "Current speed:" + location.getSpeed(), Toast.LENGTH_SHORT).show();
+                    myPrefs = context.getSharedPreferences("myPrefs", MODE_WORLD_READABLE);
+                    String blockingMode = myPrefs.getString("mode", "yes");
+                    Bundle bb = intent.getExtras();
+                    String state = bb.getString(TelephonyManager.EXTRA_STATE);
+                    if ((state != null) && (state.equalsIgnoreCase(TelephonyManager.EXTRA_STATE_RINGING))) {
+                        incommingNumber = bb.getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
+                        if (blockingMode.equals("yes")) {
+                            blockCall(context, bb);
+                        }
                     }
+                }
+                catch (NullPointerException ex)
+                {
+                    //Toast.makeText(context, ex.toString(), Toast.LENGTH_SHORT).show();
                 }
             }
             public void onStatusChanged(String provider, int status, Bundle extras) {
