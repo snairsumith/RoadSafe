@@ -12,15 +12,21 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:id="@+id/imageView"
         android:layout_gravity="center_vertical"
         android:src="@drawable/blockicon"
-        android:layout_marginLeft="40dp"/>
+        android:layout_marginLeft="40dp"
+        />
 </LinearLayout>
-
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/lir2"
+    android:orientation="vertical"
+    android:layout_marginTop="200dp"
+    >
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="197dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Block Your Call ?"
@@ -28,7 +34,7 @@
         android:textSize="25dp"
         android:textColor="#fffffbf9"
         android:shadowColor="#ffffdedb"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/lir2"
         android:layout_centerHorizontal="true" />
 
     <ToggleButton
@@ -40,12 +46,16 @@
         android:background="@color/buttonBgcolor"
         android:width="20dp"
         android:height="10dp"
+        android:textOff="Yes"
+        android:textOn="No"
         android:textSize="20dp"
         android:textColor="@color/bgColor"
         android:textStyle="bold"
-        android:layout_marginTop="40dp"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="150dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -58,8 +68,7 @@
         android:shadowColor="#ffffdedb"
         android:layout_below="@+id/toggleButton"
         android:layout_alignEnd="@+id/textView"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="75dp"/>
+        android:layout_marginTop="15dp" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -70,11 +79,47 @@
         android:background="@color/buttonBgcolor"
         android:width="20dp"
         android:height="10dp"
+        android:textOff="Yes"
         android:textSize="20dp"
         android:textColor="@color/bgColor"
         android:textStyle="bold"
         android:layout_below="@+id/textView2"
         android:layout_alignStart="@+id/toggleButton"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="150dp" />
+
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:orientation="horizontal"
+       >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Contacts"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="55dp"
+        android:textColor="@color/bgColor"
+        android:textAllCaps="@bool/abc_action_bar_embed_tabs_pre_jb"
+        android:background="@drawable/rounde_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Contacts"
+        android:id="@+id/button4"
+        android:textColor="@color/bgColor"
+        android:textAllCaps="@bool/abc_action_bar_embed_tabs_pre_jb"
+        android:background="@drawable/rounde_button"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="130dp" />
+   </LinearLayout>
+
+
+</LinearLayout>
+
 
 </RelativeLayout>

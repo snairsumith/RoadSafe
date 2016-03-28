@@ -2,4 +2,5 @@
 <resources>
     <color name="bgColor">#eb062f</color>
     <color name="buttonBgcolor">#f9f9ee</color>
+    <color name="whiteColor">#ffffff</color>
 </resources>
