@@ -88,11 +88,14 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="150dp" />
 
+<<<<<<< HEAD
    <LinearLayout
        android:layout_width="fill_parent"
        android:layout_height="fill_parent"
        android:orientation="horizontal"
        >
+=======
+>>>>>>> 226f46eb5d87c962e785703e73a76eec6d068177
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -100,12 +103,17 @@
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+<<<<<<< HEAD
         android:layout_marginLeft="20dp"
+=======
+        android:layout_marginLeft="220dp"
+>>>>>>> 226f46eb5d87c962e785703e73a76eec6d068177
         android:layout_marginTop="55dp"
         android:textColor="@color/bgColor"
         android:textAllCaps="@bool/abc_action_bar_embed_tabs_pre_jb"
         android:background="@drawable/rounde_button"/>
 
+<<<<<<< HEAD
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -118,6 +126,8 @@
         android:layout_marginLeft="130dp" />
    </LinearLayout>
 
+=======
+>>>>>>> 226f46eb5d87c962e785703e73a76eec6d068177
 
 </LinearLayout>
 

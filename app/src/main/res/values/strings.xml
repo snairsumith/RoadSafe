@@ -7,7 +7,10 @@
     <string name="title_activity_splash">splash</string>
     <string name="shimmer">RoadSafe</string>
     <string name="title_activity_add_contacts">AddContacts</string>
+<<<<<<< HEAD
     <string name="title_activity_display">Display</string>
     <string name="title_activity_view_contacts">ViewContacts</string>
+=======
+>>>>>>> 226f46eb5d87c962e785703e73a76eec6d068177
 
 </resources>

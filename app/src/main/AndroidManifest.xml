@@ -11,7 +11,11 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.SEND_SMS" />
+=======
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+>>>>>>> 226f46eb5d87c962e785703e73a76eec6d068177
 
     <application
         android:allowBackup="true"
@@ -41,6 +45,7 @@
             android:name=".AddContacts"
             android:label="@string/title_activity_add_contacts" >
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".Display"
             android:label="@string/title_activity_display" >
@@ -49,6 +54,8 @@
             android:name=".ViewContacts"
             android:label="@string/title_activity_view_contacts" >
         </activity>
+=======
+>>>>>>> 226f46eb5d87c962e785703e73a76eec6d068177
     </application>
 
 </manifest>
