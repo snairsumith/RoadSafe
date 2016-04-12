@@ -14,9 +14,9 @@
         android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:id="@+id/imageView"
-        android:layout_gravity="center_vertical"
         android:src="@drawable/blockicon"
         android:layout_marginLeft="40dp"
+        android:layout_marginTop="0dp"
         />
 </LinearLayout>
 <LinearLayout android:layout_width="fill_parent"
@@ -28,8 +28,9 @@
     <TextView
         android:layout_width="197dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Block Your Call ?"
+        android:text="   Drive Mode"
         android:id="@+id/textView"
         android:textSize="25dp"
         android:textColor="#fffffbf9"
@@ -61,14 +62,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Send Emergency Alert ?"
+        android:text="   Panic Mode"
         android:id="@+id/textView2"
         android:textSize="25dp"
         android:textColor="#fffffbf9"
         android:shadowColor="#ffffdedb"
         android:layout_below="@+id/toggleButton"
         android:layout_alignEnd="@+id/textView"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal" />
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -90,7 +92,7 @@
 
    <LinearLayout
        android:layout_width="fill_parent"
-       android:layout_height="fill_parent"
+       android:layout_height="match_parent"
        android:orientation="horizontal"
        >
     <Button
@@ -101,7 +103,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="40dp"
         android:textColor="@color/bgColor"
         android:textAllCaps="@bool/abc_action_bar_embed_tabs_pre_jb"
         android:background="@drawable/rounde_button"/>
@@ -114,8 +116,9 @@
         android:textColor="@color/bgColor"
         android:textAllCaps="@bool/abc_action_bar_embed_tabs_pre_jb"
         android:background="@drawable/rounde_button"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="130dp" />
+
    </LinearLayout>
 
 

@@ -4,10 +4,12 @@
     <string name="app_name">RoadSafe</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_splash">splash</string>
+    <string name="title_activity_splash">RoadSafe</string>
     <string name="shimmer">RoadSafe</string>
     <string name="title_activity_add_contacts">AddContacts</string>
     <string name="title_activity_display">Display</string>
     <string name="title_activity_view_contacts">ViewContacts</string>
+    <string name="title_activity_aboutapp">AboutApp</string>
+    <string name="title_activity_help">Help</string>
 
 </resources>
