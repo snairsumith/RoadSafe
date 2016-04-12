@@ -6,9 +6,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -18,7 +15,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.CompoundButton;
@@ -26,11 +22,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-import com.example.rst.roadsafe.R;
+
+import com.android.internal.telephony.ITelephony;
 
 import java.lang.reflect.Method;
 
-import internal.telephony.ITelephony;
+
 
 
 public class MainActivity extends ActionBarActivity {
@@ -251,7 +248,7 @@ public class MainActivity extends ActionBarActivity {
             String state = bb.getString(TelephonyManager.EXTRA_STATE);
             if ((state != null) && (state.equalsIgnoreCase(TelephonyManager.EXTRA_STATE_RINGING))) {
                 incommingNumber = bb.getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
-                if (blockingMode.equals("yes")) {
+                if (blockingMode.equals("on")) {
                     blockCall(context, bb);
                 }
             }

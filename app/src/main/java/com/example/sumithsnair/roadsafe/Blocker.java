@@ -6,14 +6,13 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
-import android.widget.Toast;
+
+
+import com.android.internal.telephony.ITelephony;
 
 import java.lang.reflect.Method;
 
-import internal.telephony.ITelephony;
+
 
 /**
  * Created by sumith s nair on 2/23/2016.

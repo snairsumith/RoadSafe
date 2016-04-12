@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.rst.roadsafe.R;
+
 
 public class AddContacts extends ActionBarActivity {
     String user,contact,name,pswd;
@@ -25,6 +27,7 @@ public class AddContacts extends ActionBarActivity {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 user=txtNm.getText().toString();
                 contact=txtph.getText().toString();
                 adp.write();

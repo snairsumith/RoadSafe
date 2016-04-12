@@ -33,7 +33,7 @@ public class MyService extends Service
         {
             Log.e(TAG, "onLocationChanged: " + location);
             Toast.makeText(getApplicationContext(), "Location Change"+location.getSpeed(), Toast.LENGTH_LONG).show();
-            if(location.getSpeed()==0.0)//Check the distance condition if you want
+            if(location.getSpeed()>0)//Check the distance condition if you want
             {
                 Intent intent = new Intent("my-event");
                 // add data

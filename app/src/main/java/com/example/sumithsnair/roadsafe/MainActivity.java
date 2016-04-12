@@ -10,19 +10,19 @@ import android.location.LocationManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
-import android.telephony.gsm.SmsManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-import java.lang.reflect.Method;
 
-import internal.telephony.ITelephony;
+import com.android.internal.telephony.ITelephony;
+import com.example.rst.roadsafe.R;
+
+import java.lang.reflect.Method;
 
 
 public class MainActivity extends ActionBarActivity {
