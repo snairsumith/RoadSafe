@@ -1,7 +1,7 @@
-package internal.telephony;
+package com.android.internal.telephony;
 
 /**
- * Created by sumith s nair on 2/23/2016.
+ * Created by sumith on 4/13/2016.
  */
 public interface ITelephony {
     boolean endCall();

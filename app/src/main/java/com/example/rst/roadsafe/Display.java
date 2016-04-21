@@ -1,4 +1,4 @@
-package com.example.sumithsnair.roadsafe;
+package com.example.rst.roadsafe;
 
 import android.content.ContentResolver;
 import android.content.Context;

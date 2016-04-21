@@ -1,4 +1,4 @@
-package com.example.sumithsnair.roadsafe;
+package com.example.rst.roadsafe;
 
 import android.app.ListActivity;
 import android.database.Cursor;
@@ -9,7 +9,6 @@ import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.rst.roadsafe.R;
 
 import java.util.ArrayList;

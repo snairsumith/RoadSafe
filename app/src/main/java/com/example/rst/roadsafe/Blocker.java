@@ -1,4 +1,4 @@
-package com.example.sumithsnair.roadsafe;
+package com.example.rst.roadsafe;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -14,9 +14,6 @@ import java.lang.reflect.Method;
 
 
 
-/**
- * Created by sumith s nair on 2/23/2016.
- */
 public class Blocker extends BroadcastReceiver {
     private static final int MODE_WORLD_READABLE = 1;
     private ITelephony telephonyService;
@@ -25,8 +22,6 @@ public class Blocker extends BroadcastReceiver {
     private SharedPreferences myPrefs;
     @Override
     public void onReceive(Context context, Intent intent) {
-
-
 
 
         myPrefs = context.getSharedPreferences("myPrefs", MODE_WORLD_READABLE);

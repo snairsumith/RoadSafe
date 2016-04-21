@@ -1,11 +1,13 @@
-package com.example.sumithsnair.roadsafe;
+package com.example.rst.roadsafe;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.telephony.gsm.SmsManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.os.Handler;
+
 
 import com.example.rst.roadsafe.R;
 import com.romainpiel.shimmer.Shimmer;

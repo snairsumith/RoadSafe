@@ -1,4 +1,4 @@
-package com.example.sumithsnair.roadsafe;
+package com.example.rst.roadsafe;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -27,7 +27,6 @@ public class AddContacts extends ActionBarActivity {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 user=txtNm.getText().toString();
                 contact=txtph.getText().toString();
                 adp.write();
