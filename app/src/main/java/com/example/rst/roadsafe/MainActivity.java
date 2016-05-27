@@ -224,14 +224,14 @@ public class MainActivity extends ActionBarActivity {
 
 
     }
-    @Override
-    public void onResume() {
-        super.onResume();
+//    @Override
+//    public void onResume() {
+       // super.onResume();
 
         // Register mMessageReceiver to receive messages.
-        LocalBroadcastManager.getInstance(this).registerReceiver(mMessageReceiver,
-                new IntentFilter("my-event"));
-    }
+        //LocalBroadcastManager.getInstance(this).registerReceiver(mMessageReceiver,
+          //      new IntentFilter("my-event"));
+//    }
     // handler for received Intents for the "my-event" event
     private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
         @Override
