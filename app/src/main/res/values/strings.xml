@@ -7,9 +7,14 @@
     <string name="title_activity_splash">RoadSafe</string>
     <string name="shimmer">RoadSafe</string>
     <string name="title_activity_add_contacts">AddContacts</string>
+
     <string name="title_activity_display">Display</string>
     <string name="title_activity_view_contacts">ViewContacts</string>
     <string name="title_activity_aboutapp">AboutApp</string>
     <string name="title_activity_help">Help</string>
+
+    <string name="title_activity_display">Display</string>
+    <string name="title_activity_view_contacts">ViewContacts</string>
+
 
 </resources>

@@ -47,6 +47,10 @@ public class MainActivity extends ActionBarActivity {
         editor=myPrefs.edit();
         setContentView(R.layout.activity_main);
         Button btnAddContact=(Button)findViewById(R.id.button);
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3d0d9f22bcfb99c69efe3bc00d3d3fef3e3c7921
         Button btnViewContact=(Button)findViewById(R.id.button4);
         btnViewContact.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,10 +59,23 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(strint);
             }
         });
+<<<<<<< HEAD
         btnAddContact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent strint=new Intent(MainActivity.this,Display.class);
+=======
+        btnAddContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent strint=new Intent(MainActivity.this,AddContacts.class);
+>>>>>>> 226f46eb5d87c962e785703e73a76eec6d068177
+=======
+        btnAddContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent strint=new Intent(MainActivity.this,Display.class);
+>>>>>>> 3d0d9f22bcfb99c69efe3bc00d3d3fef3e3c7921
                 startActivity(strint);
             }
         });
@@ -88,7 +105,15 @@ public class MainActivity extends ActionBarActivity {
 
                         place = gps.getLocationName(latitude, longitude);
 
+<<<<<<< HEAD
+<<<<<<< HEAD
                         userMessage = "I am in Panic Situvation .Please help me.My Current Location:" + place.substring(0,70);
+=======
+                        userMessage = "I am in Panic Situvation .Please help me.My Latitude :" + latitude + " & Logitude :" + longitude + " & Place Name :" + place;
+>>>>>>> 226f46eb5d87c962e785703e73a76eec6d068177
+=======
+                        userMessage = "I am in Panic Situvation .Please help me.My Current Location:" + place.substring(0,70);
+>>>>>>> 3d0d9f22bcfb99c69efe3bc00d3d3fef3e3c7921
                     }
                     else
                     {
@@ -103,15 +128,35 @@ public class MainActivity extends ActionBarActivity {
                         do{
                             MobNo=s.getString(s.getColumnIndex(Adptr.KEY_CONTACTNO));
                             Name=s.getString(s.getColumnIndex(Adptr.KEY_UNAME));
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3d0d9f22bcfb99c69efe3bc00d3d3fef3e3c7921
                             Toast.makeText(MainActivity.this,MobNo+Name,Toast.LENGTH_LONG).show();
                             System.out.println("Mob No :"+MobNo+" ,Name :"+Name+",UserMessage :"+userMessage);
 //                            SmsManager sm=SmsManager.getDefault();
 //                            sm.sendTextMessage(MobNo, null, userMessage, null, null);
+<<<<<<< HEAD
                         }
                         while (s.moveToNext());
 			 			    }
 
                    //System.out.println("Mob No :"+MobNo+" ,Name :"+Name+",UserMessage :"+userMessage);
+=======
+
+                        }
+                        while (s.moveToNext());
+			 			    }
+                    SmsManager sm=SmsManager.getDefault();
+                    sm.sendTextMessage(MobNo, null, userMessage, null, null);
+>>>>>>> 226f46eb5d87c962e785703e73a76eec6d068177
+=======
+                        }
+                        while (s.moveToNext());
+			 			    }
+
+                   //System.out.println("Mob No :"+MobNo+" ,Name :"+Name+",UserMessage :"+userMessage);
+>>>>>>> 3d0d9f22bcfb99c69efe3bc00d3d3fef3e3c7921
 
                 }
                 else {

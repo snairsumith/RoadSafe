@@ -11,7 +11,13 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
 
     <application
         android:allowBackup="true"
@@ -47,12 +53,30 @@
             android:label="@string/title_activity_splash" />
         <activity
             android:name=".AddContacts"
+<<<<<<< HEAD
+            android:label="@string/title_activity_add_contacts" >
+        </activity>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3d0d9f22bcfb99c69efe3bc00d3d3fef3e3c7921
+=======
             android:label="@string/title_activity_add_contacts" />
+>>>>>>> b36053f2c4e60644df44062931046df5d5143750
         <activity
             android:name=".Display"
             android:label="@string/title_activity_display" />
         <activity
             android:name=".ViewContacts"
+<<<<<<< HEAD
+            android:label="@string/title_activity_view_contacts" >
+        </activity>
+<<<<<<< HEAD
+=======
+>>>>>>> 226f46eb5d87c962e785703e73a76eec6d068177
+=======
+>>>>>>> 3d0d9f22bcfb99c69efe3bc00d3d3fef3e3c7921
+=======
             android:label="@string/title_activity_view_contacts" />
         <activity
             android:name=".aboutapp"
@@ -61,6 +85,7 @@
             android:name=".help"
             android:label="@string/title_activity_help"></activity>
 
+>>>>>>> b36053f2c4e60644df44062931046df5d5143750
     </application>
 
 </manifest>

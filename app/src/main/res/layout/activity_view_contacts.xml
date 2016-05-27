@@ -10,7 +10,11 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:id="@+id/listView"
+=======
         android:id="@android:id/list"
+>>>>>>> 3d0d9f22bcfb99c69efe3bc00d3d3fef3e3c7921
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true" />
 </RelativeLayout>
